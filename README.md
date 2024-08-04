@@ -1,8 +1,4 @@
-Certainly! Here's an updated, slightly more elite version of your README for 2024:
-
----
-
-## :label: **About CS50**
+## :label: **CS50x: Introduction to the Intellectual Enterprises of Computer Science and the Art of Programming**
 
 **[CS50](https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0)** is Harvard University's premier introduction to the intellectual enterprises of computer science and the art of programming. The course rigorously explores languages such as C, Python, SQL, HTML, CSS & JavaScript, as well as foundational computer science concepts including algorithms & data structures, abstraction, encapsulation, resource management, security, and the sophisticated Flask web framework.
 
