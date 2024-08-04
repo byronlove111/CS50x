@@ -8,9 +8,7 @@
 
 ## :computer: **About the Repository**
 
-An important part of the course is submitting the labs and problem sets, as well as the final project for feedback. This repository contains my solutions for the problem sets and labs. The final project is in a separate repository, the link is below.
-
-Also below are links and short descriptions for each of the projects. If you'd like to read more about the implementation requirements, there's a link in each folder that will lead to them.
+An important part of the course is submitting the labs and problem sets, as well as the final project for feedback. This repository contains my solutions for the problem sets and labs and my final project.
 
 ---
 
