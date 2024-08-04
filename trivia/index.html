@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice</h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
+                <button class="userButton" id="1">6 people per 1 sheep</button>
+                <button class="userButton" id="2">3 people per 1 sheep</button>
+                <button class="userButton" id="3">1 person per 1 sheep</button>
+                <button class="userButton" id="4">1 person per 3 sheep</button>
+                <button class="userButton" id="5">1 person per 6 sheep</button>
+                <p class="incorrect invisible">Incorrect</p>
+                <p class="correct invisible">Correct</p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>In which country is it illegal to own only one guinea pig, as a lone pig might get lonely?</h3>
+                <form id="freeResponseForm">
+                    <input type="text" id="userAnswer" name="userAnswer">
+                    <br><br>
+                    <input type="button" value="Submit" id="submitButton" style="cursor:pointer;">
+                </form>
+                <p id="feedback"></p>
+            </div>
+        </div>
+        </div>
+    </body>
+    <script>
+        // TODO: Add code to check answers to questions
+
+        const buttons = document.querySelectorAll(".userButton");
+        const correctAnswer = "5"; // Correct answer (1 person per 6 sheep)
+        const correct = document.querySelector(".correct");
+        const incorrect = document.querySelector(".incorrect");
+
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                buttons.forEach(btn => btn.classList.remove('correct-button', 'incorrect-button'));
+                if (this.id === correctAnswer){
+                    this.classList.add('correct-button');
+                    correct.classList.add("visible");
+                    correct.classList.remove("invisible");
+                    incorrect.classList.add("invisible");
+                } else {
+                    this.classList.add('incorrect-button');
+                    incorrect.classList.remove("invisible");
+                    correct.classList.add("invisible");
+                    correct.classList.remove("visible");
+                    incorrect.classList.add("visible");
+                }
+            });
+        });
+
+        document.getElementById('submitButton').addEventListener('click', function() {
+            const userAnswer = document.getElementById('userAnswer').value.trim().toLowerCase();
+            const freeResponseCorrectAnswer = "switzerland";
+            const feedback = document.getElementById('feedback');
+            const inputField = document.getElementById('userAnswer');
+
+            if (userAnswer === freeResponseCorrectAnswer) {
+                inputField.style.backgroundColor = 'green';
+                feedback.textContent = "Correct!";
+                feedback.className = 'correct-text';
+                feedback.style.display = 'block';
+            } else {
+                inputField.style.backgroundColor = 'red';
+                feedback.textContent = "Incorrect";
+                feedback.className = 'incorrect-text';
+                feedback.style.display = 'block';
+            }
+        });
+    </script>
+</html>

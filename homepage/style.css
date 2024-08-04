@@ -1,0 +1,26 @@
+body {
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.jumbotron {
+    background-color: #e9ecef;
+    padding: 2rem;
+}
+
+h1 {
+    color: #343a40;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}

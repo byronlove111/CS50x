@@ -1,0 +1,21 @@
+HTML Tags:
+1. <nav>
+2. <a>
+3. <button>
+4. <div>
+5. <ul>
+6. <li>
+7. <h1>
+8. <p>
+9. <form>
+10. <input>
+
+CSS Selectors:
+1. body - background-color
+2. .navbar-brand - font-weight
+3. .jumbotron - background-color, padding
+4. h1 - color
+5. p - font-size
+
+Bootstrap is utilized for responsive design and overall styling.
+JavaScript is used to display a success alert upon form submission on the contact page.

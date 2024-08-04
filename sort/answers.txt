@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: This program has a fast runtime for the already sorted datasets, but it performs poorly with larger datasets of reversed and random numbers.
+
+sort2 uses: Merge sort
+
+How do you know?: Perform well in all datasets
+
+sort3 uses: Selection sort
+
+How do you know?: It performs poorly with the three.txt files containing larger datasets (50000) and it is faster when handling smaller datasets (5000).
