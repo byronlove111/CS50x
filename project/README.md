@@ -1,5 +1,5 @@
 # Sudoku Solver
-#### Video Demo: https://youtu.be/SEY2YgugrcM
+#### Video Demo:
 #### Description:
 
 The Sudoku Solver is a software tool designed to solve a 9x9 Sudoku puzzle. The puzzle is provided through command-line arguments, and the solver uses a backtracking algorithm to find the solution.
